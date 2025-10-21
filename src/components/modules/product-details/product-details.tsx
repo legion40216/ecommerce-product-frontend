@@ -35,33 +35,35 @@ export default function ProductDetails({
   };
 
   return (
-    <div className="grid place-content-center space-y-4 p-6">
+    <div className="grid place-content-center space-y-6 p-6">
       {/* Product Info */}
-      <div className="space-y-2 md:space-y-4">
-        <span className="text-kumbh-orange font-semibold uppercase text-sm block">
+      <div className="space-y-4">
+        <span className="text-kumbh-orange font-semibold uppercase text-sm 
+        lg:text-base block"
+        >
           sneaker company
         </span>
-        <h1 className="text-3xl font-bold text-kumbh-VeryDarkBlue">
+        <h1 className="text-4xl lg:text-5xl font-bold text-kumbh-VeryDarkBlue">
           {name}
         </h1>
-        <p className="md:mt-8 text-kumbh-darkGrayishBlue">
+        <p className="md:mt-8 lg:text-lg text-kumbh-darkGrayishBlue">
           {description}
         </p>
       </div>
 
       {/* Price Section */}
       <div className="flex items-center justify-between md:flex-col 
-        md:items-start md:justify-normal md:space-y-2"
+        md:items-start md:justify-normal md:space-y-2 "
       >
-        <div className="flex items-center gap-3">
-          <span className="text-2xl font-bold text-kumbh-VeryDarkBlue">
+        <div className="flex items-center gap-3 ">
+          <span className="text-2xl lg:text-3xl font-bold text-kumbh-VeryDarkBlue">
             ${price.toFixed(2)}
           </span>
-          <Badge className="bg-kumbh-orange/20 text-kumbh-orange font-bold">
+          <Badge className="bg-kumbh-orange/20 text-kumbh-orange font-bold lg:text-lg">
             {discount}%
           </Badge>
         </div>
-        <span className="line-through text-kumbh-grayishBlue font-[600]">
+        <span className="line-through text-kumbh-grayishBlue font-bold lg:text-lg">
           {formatter.format(price * 2)}
         </span>
       </div>
@@ -100,7 +102,8 @@ export default function ProductDetails({
         {/* Cart Action Button */}
         <Button
           size="lg"
-          className="bg-kumbh-orange hover:bg-kumbh-orange/90 text-white md:flex-1"
+          className="bg-kumbh-orange hover:bg-kumbh-orange/90 
+          text-white md:flex-1 font-bold"
           onClick={onCartAction}
         >
           <span className="flex items-center gap-2">

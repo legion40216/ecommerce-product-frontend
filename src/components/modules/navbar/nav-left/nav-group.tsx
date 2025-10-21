@@ -24,7 +24,7 @@ export default function NavGroup() {
             asChild
             className="text-kumbh-darkGrayishBlue hover:!bg-transparent transition-none
             font-medium !h-full border-b-4 border-transparent hover:border-kumbh-orange 
-            !rounded-none"
+            !rounded-none lg:text-lg"
           >
             <a href={route.href}>
               {route.label.charAt(0).toUpperCase() + route.label.slice(1)}

@@ -68,9 +68,11 @@ export default function Cart() {
             font-medium mb-4"
             >
               <p>Subtotal</p>
-              <p>{formatter.format(getTotalPrice())}</p>
+              <p className="font-bold">{formatter.format(getTotalPrice())}</p>
             </div>
-            <Button className="bg-kumbh-orange hover:bg-kumbh-orange/90 text-white w-full">
+            <Button className="bg-kumbh-orange hover:bg-kumbh-orange/90 
+            text-white w-full font-bold"
+            >
               Checkout
             </Button>
           </div>

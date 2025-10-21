@@ -78,7 +78,7 @@ export default function CartItem({
           </Button>
 
           <div className="flex items-center bg-kumbh-lightGrayishBlue aspect-square">
-            <span className="px-4 text-kumbh-veryDarkBlue font-bold">
+            <span className="px-4 text-kumbh-veryDarkBlue font-bold text-sm">
               {count}
             </span>
           </div>

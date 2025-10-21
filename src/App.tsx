@@ -53,14 +53,14 @@ function App() {
   };
 
   return (
-    <div className="grid grid-rows-[min-content_1fr] h-screen md:space-y-9 container m-auto">
-      <header className="px-4 border-b border-kumbh-DarkGrayishBlue">
-        <Navbar />
-      </header>
+    <div className="grid h-screen container m-auto">
+      <div className="grid-rows-[min-content_1fr] min-h-screen">
+        <header className="mx-4 border-b border-kumbh-grayishBlue">
+          <Navbar />
+        </header>
 
-      <main className="md:px-4 md:py-8 container m-auto">
-        <div className="h-full grid place-content-center">
-          <div className="grid md:grid-cols-2 md:gap-12">
+        <main className="mx-4 md:py-16">
+          <div className="grid md:grid-cols-2 md:gap-16">
             <ProductGallery 
               gallery={productData.gallery} 
               productName={productData.name} 
@@ -77,8 +77,8 @@ function App() {
               onCartAction={handleCartAction}
             />
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
   );
 }
