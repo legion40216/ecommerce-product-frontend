@@ -21,6 +21,7 @@ export default function Cart() {
     modal={false} 
     >
       <DropdownMenuTrigger  asChild>
+
         <Button size={"icon"} variant={"ghost"} className="relative">
           <Badge className="size-4 aspect-square absolute -top-1 -right-1 
           bg-kumbh-orange text-kumbh-white rounded-sm"
