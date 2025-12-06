@@ -35,9 +35,9 @@ export default function ProductGallery({
   };
 
   return (
-    <div className="max-w-md mx-auto">
+    <div>
       {/* Main Image with Navigation */}
-      <div className="relative aspect-square rounded-2xl overflow-hidden mb-8">
+      <div className="relative aspect-square md:rounded-2xl overflow-hidden mb-8">
         <img
           src={selectedImage}
           alt={productName}

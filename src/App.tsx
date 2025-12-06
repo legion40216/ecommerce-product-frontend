@@ -63,12 +63,14 @@ function App() {
 
         <main className="py-8 md:py-16">
           <div className="grid md:grid-cols-2 justify-between gap-6 md:gap-20 lg:gap-32">
-            <ProductGallery 
-              gallery={productData.gallery} 
-              productName={productData.name} 
-            />
-            
-            <div className="content-center">
+            <div  className="sm:max-w-sm md:max-w-lg lg:max-w-xl mx-auto">
+              <ProductGallery 
+                gallery={productData.gallery} 
+                productName={productData.name} 
+              />
+            </div>
+
+            <div className="sm:max-w-sm md:max-w-lg lg:max-w-xl mx-auto content-center">
               <ProductDetails
                 name={productData.name}
                 description={productData.description}
